@@ -6,10 +6,9 @@
 /*   By: javialva <javialva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 08:57:06 by javialva          #+#    #+#             */
-/*   Updated: 2024/06/07 09:13:26 by javialva         ###   ########.fr       */
+/*   Updated: 2024/06/08 09:55:51 by javialva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
