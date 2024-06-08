@@ -6,10 +6,9 @@
 /*   By: javialva <javialva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 01:29:35 by javialva          #+#    #+#             */
-/*   Updated: 2024/06/07 01:43:53 by javialva         ###   ########.fr       */
+/*   Updated: 2024/06/08 11:24:55 by javialva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 
 void	ft_ft(int *nbr)
 {
