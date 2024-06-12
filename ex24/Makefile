@@ -11,23 +11,22 @@
 # **************************************************************************** #
 
 NAME = libft.a
-SRC_DIR = ./srcs
-INCLUDES_DIR = ./includes/*.h
+SRC_DIR = srcs/ft_putchar.c srcs/ft_putstr.c srcs/ft_strcmp.c srcs/ft_strlen.c \
+	srcs/ft_swap.c
+INCLUDES_DIR = -Iincludes
 CFLAGS = -Wall -Wextra -Werror
-OPTION = -c $(INCLUDES_DIR)
-FILES = $(SRC_DIR)ft_putchar.c $(SRC_DIR)ft_putstr.c $(SRC_DIR)ft_strcmp.c \
-	$(SRC_DIR)ft_strlen.c $(SRC_DIR)ft_swap.c
+OBJECTS = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
 
 all: $(NAME)
 
 $(NAME):
-	gcc $(CFLAGS) $(OPTION) $(FILES) $(INCLUDES_DIR)
-	ar rc $(NAME) *.o
+	gcc $(CFLAGS) -c $(SRC_DIR) $(INCLUDES_DIR)
+	ar rc $(NAME) $(OBJECTS)
 
 clean:
-	rm -f *.o
+	/bin/rm -f $(OBJECTS)
 
 fclean: clean
-	rm -f $(NAME)
+	/bin/rm -f $(NAME)
 
-re: fclean -all
+re: fclean all
